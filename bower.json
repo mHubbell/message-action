@@ -1,0 +1,26 @@
+{
+  "name": "message-action",
+  "version": "0.0.1",
+  "homepage": "https://github.com/mHubbell/message-action",
+  "authors": [
+    "Hub Selto <hublabs@gmail.com>"
+  ],
+  "description": "A simple jquery plugin for displaying messages to users with options for executables actions, primarily "undo"",
+  "main": "message-action.js",
+  "keywords": [
+    "message",
+    "jQuery",
+    "undo"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": ">=1.10.2"
+  }
+}
