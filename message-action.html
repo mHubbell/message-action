@@ -1,13 +1,13 @@
 <script id="message-action-template" type="text/template" class="template">
 <div class="message-wrapper">
-    <div class="alert message <% if ( data.messageClass ){ %><%= messageClass %><% } %>">
+    <div class="alert message <% if ( data.messageClass ){ %><%= data.messageClass %><% } %>">
         <button type="button" class="close btn-small" data-action-type="execute">
             <i class="icon-small icon-remove"></i>
         </button>
         <span class="message-text">
-        <% if ( data.icon ){ %><i class="message-icon <%= icon %>"></i><% } %>
-        <% if ( data.boldMessage ){ %><strong><%= boldMessage %></strong> <% } %>
-        <%= message %>
+        <% if ( data.icon ){ %><i class="message-icon <%= data.icon %>"></i><% } %>
+        <% if ( data.boldMessage ){ %><strong><%= data.boldMessage %></strong><% } %>
+        <% if ( data.message ){ %><%= data.message %><% } %>
         </span>
         <% if ( data.actions ){ %>
             <% _.each( data.actions, function( action ){ %>
