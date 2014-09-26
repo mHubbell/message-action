@@ -94,10 +94,8 @@
      * Display an undo message / button based on the current undo item
      */
     MessageAction.prototype.displayMessage = function() {
-        // display an undo message / button at the top of the specified
-        // container
         var messageTemplate = _.template( this.$messageTemplate.html() );
-        this.$message = $(messageTemplate(this.messageItem));
+        this.$message = $(messageTemplate({data:this.messageItem}));
         this.$message.css('opacity', 0);
         this.$messageContainer.append(this.$message);
         this.$message.fadeTo(this.options.fadeDelay, 1);
