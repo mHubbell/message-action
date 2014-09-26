@@ -13,7 +13,7 @@
             <% _.each( actions, function( action ){ %>
                 <% if ( action.type != 'link' ){ %>
                 <button class="btn btn-link btn-small" data-action-type="<%= action.type %>"><%= action.label %></button>
-                <% else %>
+                <% } else { %>
                 <a href="<%= action.location %>" class="btn btn-link btn-small"><%= action.label %></a>
                 <% } %>
             <% }); %>
