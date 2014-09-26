@@ -5,8 +5,8 @@
             <i class="icon-small icon-remove"></i>
         </button>
         <span class="message-text">
-        <% if ( icon ){ %><i class="message-icon {{icon}}"></i><% } %>
-        <% if ( boldMessage ){ %><strong>{{boldMessage}}</strong> <% } %>
+        <% if ( icon ){ %><i class="message-icon <%= icon %>"></i><% } %>
+        <% if ( boldMessage ){ %><strong><%= boldMessage %></strong> <% } %>
         <%= message %>
         </span>
         <% if ( actions ){ %>
