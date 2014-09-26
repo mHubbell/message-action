@@ -26,7 +26,7 @@
      * Defaults
      */
     var defaults = {
-        messageContainer : '#message-container',
+        messageContainer : '#message-action-container',
         autoExecuteDocEvents : 'pjax:start',
         autoExecuteWinEvents : 'beforeunload unload',
         messageTemplate : '#message-button-template',
