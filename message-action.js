@@ -29,7 +29,7 @@
         messageContainer : '#message-action-container',
         autoExecuteDocEvents : 'pjax:start',
         autoExecuteWinEvents : 'beforeunload unload',
-        messageTemplate : '#message-button-template',
+        messageTemplate : '#message-action-template',
         fadeDelay : "fast",
         phrases : {
             undo : "Undo"
