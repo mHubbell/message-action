@@ -1,6 +1,6 @@
 {
   "name": "message-action",
-  "version": "0.0.3",
+  "version": "0.0.1",
   "homepage": "https://github.com/mHubbell/message-action",
   "authors": [
     "Hub Selto <hublabs@gmail.com>"
@@ -21,6 +21,7 @@
     "tests"
   ],
   "dependencies": {
-    "jquery": ">=1.10.2"
+    "jquery": ">=1.10.2",
+    "underscore": "~1.5.2"
   }
 }

@@ -1,0 +1,23 @@
+<script id="message-action-template" type="text/template" class="template">
+<div class="message-wrapper">
+    <div class="alert message <%= messageClass %>">
+        <button type="button" class="close btn-small" data-action-type="execute">
+            <i class="icon-small icon-remove"></i>
+        </button>
+        <span class="message-text">
+        <% if ( icon ){ %><i class="message-icon {{icon}}"></i><% } %>
+        <% if ( boldMessage ){ %><strong>{{boldMessage}}</strong> <% } %>
+        <%= message %>
+        </span>
+        <% if ( actions ){ %>
+            <% _.each( actions, function( action ){ %>
+                <% if ( action.type != 'link' ){ %>
+                <button class="btn btn-link btn-small" data-action-type="<%= action.type %>"><%= action.label %></button>
+                <% else %>
+                <a href="<%= action.location %>" class="btn btn-link btn-small"><%= action.label %></a>
+                <% } %>
+            <% }); %>
+        <% } %>
+    </div>
+</div>
+</script>

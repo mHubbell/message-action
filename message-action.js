@@ -96,10 +96,8 @@
     MessageAction.prototype.displayMessage = function() {
         // display an undo message / button at the top of the specified
         // container
-        var messageTemplate = swig.render(this.$messageTemplate.html(), {
-            locals : this.messageItem
-        });
-        this.$message = $(messageTemplate);
+        var messageTemplate = _.template( this.$messageTemplate.html() );
+        this.$message = $(template(this.messageItem));
         this.$message.css('opacity', 0);
         this.$messageContainer.append(this.$message);
         this.$message.fadeTo(this.options.fadeDelay, 1);
